@@ -3,9 +3,10 @@ import { Movie } from '@wako-app/mobile-sdk';
 import { PluginLoaderService } from '../services/plugin-loader.service';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'movie.page.html',
-  styleUrls: ['movie.page.scss'],
+    selector: 'app-tab1',
+    templateUrl: 'movie.page.html',
+    styleUrls: ['movie.page.scss'],
+    standalone: false
 })
 export class MoviePage implements OnInit {
   @ViewChild('movieRef', { read: ViewContainerRef, static: true })
